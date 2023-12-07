@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class TypingGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Get ready to start typing! The countdown begins...");
+
+        for (int i = 3; i > 0; i--) {
+            System.out.println(i);
+            try {
+                Thread.sleep(1000); // Delay of 1 second
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        scanner.close();
+    }
+}
